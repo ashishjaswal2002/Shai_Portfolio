@@ -17,10 +17,10 @@ export default function Home() {
     </Head>
     
 
-    <main className="bg-white px-2 dark:bg-gray-900 dark:text-white md:px-12 md:mt-2 ">
+    <main className="bg-white  dark:bg-gray-900 dark:text-white md:px-12 md:mt-2 ">
       <section className="min-h-screen">
       <nav className="p-8 mb-12 flex justify-between ">
-      <h1 className="text-[23px]  font-Stylish font-medium lg:text-[43px] ">Ginny Shai</h1>
+      <h1 className="text-[23px]  font-Stylish font-medium lg:text-[43px]  ">Ginny Shai</h1>
       <ul className="flex items-center justify-around">
         <li>
           <BsFillMoonStarsFill className="cursor-pointer" onClick={()=>setDarkMode(!darkMode)}/></li>
@@ -35,12 +35,21 @@ export default function Home() {
     <p className="text-md py-5 leading-8 text-gray-800 dark:text-white">Freelancer providing services for programming and for projects needs.Join me down below and let's get cracking </p>
     </div>
     <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-      <a href="https://twitter.com/Beingginnyshai">
+      <a href="https://twitter.com/Beingginnyshai" className="">
 
-            <AiFillTwitterCircle />
+            <AiFillTwitterCircle className="hover:ease-in-out duration-300 hover:scale-[1.3] hover:text-[#1d9bf0]" />
       </a>
-      <AiFillLinkedin/>
-      <AiFillYoutube/>
+      <a href="https://www.linkedin.com/in/ginny-shai-543761232">
+
+
+      <AiFillLinkedin className="hover:ease-in-out duration-300 hover:scale-[1.3] hover:text-[#0a66c2]"/>
+</a>
+<a href="https://youtube.com/@hellodotpy" >
+
+<AiFillYoutube className="hover:ease-in-out duration-300 hover:scale-[1.3] hover:text-[#ff0000]"/>
+
+</a>
+    
     </div>
      <div className="realtive bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-14 mx-auto overflow-hidden">
        <Image  src={gshai} alt='Ginny Standing Front'  />
