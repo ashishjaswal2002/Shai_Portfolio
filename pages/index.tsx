@@ -3,12 +3,12 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle,AiFillLinkedin,AiFillYoutube} from 'react-icons/ai'
 import Image from "next/image";
 import gshai from '../components/Ginny.png';
-import { Suspense, useState } from "react";
+import { useState } from "react";
+import PythonDev from "../components/PythonDev";
 
-import dynamic from "next/dynamic";
 
-const PythonCom = dynamic(()=>import("../components/PythonDev"),
-{loading:()=><p>Loading......</p>})
+
+
 
 
 export default function Home() {
@@ -63,7 +63,7 @@ export default function Home() {
      </div>
       </section>
 
-        <PythonCom/>
+    <PythonDev/>
 
     </main>
     </div>
